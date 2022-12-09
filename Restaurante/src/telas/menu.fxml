@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.controle">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" onAction="#btCardapioAction" prefWidth="100.0" text="CARDAPIO" />
+            <Button mnemonicParsing="false" onAction="#btCadastrosAction" prefWidth="100.0" text="CADASTROS" />
+            <Button mnemonicParsing="false" onAction="#btMesaAction" text="CONTROLE MESAS" />
+            <Button mnemonicParsing="false" onAction="#btPagAction" text="PAGAMENTO" />
+            <Button mnemonicParsing="false" onAction="#btCozAction" prefWidth="95.0" text="COZINHA" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <ListView fx:id="lvMesaDisp" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
